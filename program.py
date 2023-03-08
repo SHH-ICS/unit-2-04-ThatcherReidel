@@ -6,14 +6,8 @@
 # For multiples of 15, output   FizzBuzz
 # End at 32
 
-for fizzbuzz in range(32):
-    if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
-        print("fizzbuzz")
-        continue
-    elif fizzbuzz % 3 == 0:
-        print("fizz")
-        continue
-    elif fizzbuzz % 5 == 0:
-        print("buzz")
-        continue
-    print(fizzbuzz)
+result = ""
+for myNumber in range(32):
+  result = str(result) + str(myNumber) + "\n"
+
+print(result)
