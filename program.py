@@ -1,3 +1,9 @@
+# use some magic libaries to allow us to print into a variable
+from io import StringIO
+import sys
+result_io = StringIO()
+sys.stdout = result_io
+
 # My Python Program
 # Task:  use if statements to output the result of the game fizzbuzz.
 # Start at 1
@@ -21,3 +27,6 @@ for number in range(1, 33):
         value = str(number)
     # output the value to the screen
     print(value)
+
+# save result in 'result' variable
+result = result_io.getvalue()
