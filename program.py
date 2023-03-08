@@ -6,15 +6,18 @@
 # For multiples of 15, output   FizzBuzz
 # End at 32
 
+# start at 1 and end at 32  
 for number in range(1, 33):
-    found = False
+    # start with an empty string so we can tell later if fizz or buzz was added
+    value = ""
     if number % 3 == 0:
-        found = True
-        print("Fizz", end = "")
+        # it's a multiple of 3 so add Fizz
+        value += "Fizz"
     if number % 5 == 0:
-        found = True
-        print("Buzz", end = "")
-    if found == False:
-        print("%d" % (number))
-    else:
-        print("")
+        # it's a multiple of 5 so add Buzz
+        value += "Buzz"
+    # if the value is still an empty string replace it with the number
+    if len(value) == 0:
+        value = str(number)
+    # output the value to the screen
+    print(value)
