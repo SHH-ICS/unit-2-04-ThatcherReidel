@@ -6,7 +6,7 @@
 # For multiples of 15, output   FizzBuzz
 # End at 32
 
-for fizzbuzz in range(51):
+for fizzbuzz in range(32):
     if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
         print("fizzbuzz")
         continue
